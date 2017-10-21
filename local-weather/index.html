@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Local Weather</title>
+  <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="spinner load">
+</div>
+
+<main class="container">
+  <h1>Free C<span id="icon"></span>de Camp</h1>
+  <h2>Weather Forecast</h2>
+  <div id="city"></div>
+  <div class="temp">
+    <span id="temp"></span><span id="metric"></span>
+  </div>
+  <div id="weatherType"></div>
+
+  <div class="search">
+    <label for="city-search">Find a forecast</label>
+    <input type="text" id="city-search" placeholder="e.g. New York, NY" autofocus><br>
+  </div>
+</main>
+<footer>
+  <a href='https://www.linkedin.com/in/simongjetaj' target='_blank'>By <span>Simon</span></a>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACfwNoW8oFr3ImAMkMaB04jKhE7jjQjo4&libraries=places,geometry">
+</script>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

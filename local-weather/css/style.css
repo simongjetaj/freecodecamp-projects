@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Skranji", cursive;
+  font-size: calc(18px + 0.1vw);
+  line-height: calc(3em + 0.1vh);
+  text-shadow: 0.6px 0.6px 1px #fff;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.load {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff
+  url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif")
+    no-repeat center center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  word-spacing: 0.1em;
+}
+
+h2 {
+  font-weight: 100;
+  margin-top: -0.5em;
+  letter-spacing: 0.025em;
+  word-spacing: 0.05em;
+}
+
+span#icon {
+  position: relative;
+  top: 0.2em;
+}
+
+span#metric {
+  color: #1e88e5;
+  font-weight: bold;
+  text-shadow: 0.8px 0.2px 0.1px #000;  
+}
+
+#metric:hover {
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.temp {
+  margin-top: 1.5em;
+}
+
+#city {
+  margin-top: 1.5em;
+}
+
+#weatherType {
+  margin-top: 1.5em;
+}
+
+.search {
+  margin-top: 1.5em;
+}
+
+input[type="text"] {
+  font-size: 0.8em;
+  width: 14em;
+  line-height: 1.6em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px #1e88e5;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 3px 3px 30px 4px #1e88e5;
+}
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer span:hover {
+  color: #1e88e5;
+}
