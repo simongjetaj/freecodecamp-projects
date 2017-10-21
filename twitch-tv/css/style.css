@@ -1,0 +1,121 @@
+body, html {
+  background: linear-gradient(to top, #ffffff, #abbaab);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 94%;
+  margin: auto;
+}
+
+div.searchBox {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+div input[type="search"] {
+  max-width: 350px;
+  margin-bottom: 4rem;
+}
+
+input[type="search"]::placeholder {
+  text-align: center;  
+}
+
+h1.title, footer {
+  font-family: 'Fredoka One', cursive;
+}
+
+h1.title {
+  margin-top: 1rem;
+  letter-spacing: 0.06rem;
+}
+
+h1.title.is-1 span{
+  color: #6441a5;
+  margin-right: -0.67rem;
+}
+
+img {
+  border-radius: 50%;
+}
+
+main#output strong a {
+  text-decoration: none;
+}
+
+main div.columns strong:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+main#output {
+  margin-top: -2.9rem;
+}
+
+div.columns {
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+div.columns:hover { 
+  transform: scale(1.015);
+  background-color: rgba(100, 65, 165, 0.25);
+}
+
+.fa-ban {
+  color: #FFB300; 
+}
+
+.fa-check {
+  color: #64DD17;  
+}
+
+.fa-twitch {
+  color: #6441a5;
+  font-size: 2.2rem;
+}
+
+footer.footer {
+  background-color: rgba(171, 186, 171, 0.02);
+}
+
+footer span {
+  color: #000;
+}
+
+footer span:hover { 
+  color: #6441a5;
+}
+
+.fa-copyright {
+    font-size: 1.2rem;
+ }
+
+@media (max-width: 425px) {
+  h1.title.is-1 {
+    font-size: 2.4rem;
+  }
+  main p {
+    font-size: 0.85em;
+  }
+  
+  input::placeholder {
+    font-size: 0.93rem;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-twitch {
+  font-size: 1.5rem;
+  }
+  .fa-copyright {
+    font-size: 0.9rem;
+ }
+  footer.footer {
+    font-size: 0.9rem;
+  }
+}
