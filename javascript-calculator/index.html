@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main>
+  <div id="calculator">
+    <h1>Simon&#39;s Calculator</h1>
+    <div id="screenZone">
+      <div id="calculations"></div>
+      <div id="result"></div>
+    </div>
+    <div>
+      <input type="button" class="smallKey" value="&radic;" disabled onclick="addToScreenZone('√')">
+      <input type="button" class="smallKey" value="&and;" disabled  onclick="addToScreenZone('^')" title="">
+      <input type="button" class="smallKey" value="log" disabled  onclick="addToScreenZone('log')">
+      <input type="button" class="smallKey" value="ln" disabled  onclick="addToScreenZone('ln')">
+      <input type="button" class="onKey" value="ON" onclick="on()">
+      <br>
+      <input type="button" class="smallKey" value="(" disabled  onclick="addToScreenZone('(')">
+      <input type="button" class="smallKey" value=")" disabled  onclick="addToScreenZone(')')">
+      <input type="button" class="smallKey" value="sin" disabled onclick="addToScreenZone('sin')">
+      <input type="button" class="smallKey" value="cos" disabled onclick="addToScreenZone('cos')">
+      <input type="button" class="smallKey" value="tan" disabled onclick="addToScreenZone('tan')">
+    </div>
+    
+    <hr>
+    
+    <input type="button" class="key" value="7" disabled  onclick="addToScreenZone('7')">
+    <input type="button" class="key" value="8" disabled  onclick="addToScreenZone('8')">
+    <input type="button" class="key" value="9" disabled  onclick="addToScreenZone('9')">
+    <input type="button" class="key red" disabled  value="DEL" onclick="addToScreenZone('del')">
+    <input type="button" class="key red" disabled  value="AC" onclick="addToScreenZone('ac')">
+    <br>
+    
+    <input type="button" class="key" value="4" disabled  onclick="addToScreenZone('4')">
+    <input type="button" class="key" value="5" disabled  onclick="addToScreenZone('5')">
+    <input type="button" class="key" value="6" disabled  onclick="addToScreenZone('6')">
+    <input type="button" class="key" disabled value="*" onclick="addToScreenZone('*')">
+    <input type="button" class="key" disabled  value="&sol;" onclick="addToScreenZone('/')">
+    <br>
+    
+    <input type="button" class="key" value="1" disabled  onclick="addToScreenZone('1')">
+    <input type="button" class="key" value="2" disabled  onclick="addToScreenZone('2')">
+    <input type="button" class="key" value="3" disabled  onclick="addToScreenZone('3')">
+    <input type="button" class="key" value="&plus;" disabled onclick="addToScreenZone('+')">
+    <input type="button" class="key" value="&minus;" disabled onclick="addToScreenZone('-')">
+    <br>
+    
+    <input type="button" class="key" value="0" disabled  onclick="addToScreenZone('0')">
+    <input type="button" class="key" value="&#8729;" disabled onclick="addToScreenZone('.')">
+    <input type="button" class="key" value="%" disabled  onclick="addToScreenZone('%')">
+    <input type="button" class="equalsKey" disabled value="&equals;" onclick="result()">
+  </div>
+</main>
+
+<footer>
+  <p>Designed &amp; Coded by <span>Simon Gjetaj</span></p>
+  <p>
+    <a href="https://codepen.io/simongjetaj" target="_blank"><i class="fa fa-codepen" aria-hidden="true" title="My Projects On Codepen"></i></a>
+    <a href="mailto:gjetajsimon@gmail.com" target="_blank" title="Email Me"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://www.freecodecamp.org/simongjetaj" target="_blank" title="My FreeCodeCamp Profile"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/simongjetaj/" target="_blank" title="My LinkedIn Profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/Simon_Gjetaj" target="_blank" title="Follow Me On Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/simongjetaj" target="_blank" title="My Facebook Profile"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+  </p>
+</footer>
+  
+    <script  src="js/index.js"></script>
+</body>
+</html>

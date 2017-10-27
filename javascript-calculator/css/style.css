@@ -1,0 +1,143 @@
+body {
+  background: url("https://images.unsplash.com/photo-1489486501123-5c1af10d0be6?w=750&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat center / cover;
+  min-height: 100vh;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#calculator {
+  background: linear-gradient(to top, #434343, #000000); 
+  max-width: 330px;
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem 0rem;
+  border-radius: 0.8rem;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.58), inset -1px -3px 25px 0.1px #000;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.4rem;
+  margin-top: -0.1rem;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+#screenZone {
+  width: 16rem;
+  height: 3.5rem;
+  background-color: #757575;
+  margin: auto;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0px 0px 8px #000;
+  border-radius: 0.28rem;
+}
+
+@keyframes underscore {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+}
+
+.underscore {
+  float: left;
+  margin: 0.1rem 0 0 0.5rem;
+  font-size: 1.08rem;
+}
+
+.underscore::after {
+  content: '_';
+  animation: underscore infinite 1.2s step-end;
+}
+
+#result {
+  float: right;
+  margin: 1.8rem 0.5rem 0 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  outline: none;
+}
+
+div:nth-of-type(2) {
+  margin-bottom: 0.8rem;
+}
+
+hr {
+  border: 0;
+  width: 16rem;
+  height: 1.05px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);  
+}
+
+.smallKey {
+  background-color: #000;
+  color: #fff;
+  width: 42px;
+  height: 25px;
+  margin: 3.2px;
+  border-radius: 20%;
+}
+
+.key {
+  width: 42px;
+  height: 30px;
+  margin: 3.2px;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.onKey {
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.red {
+  background-color: #D32F2F;
+  color: #fff;
+}
+
+.red:hover {
+  background-color: #C62828;
+}
+
+.equalsKey {
+  width: 102px;
+  border-radius: 2rem;
+  height: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer span {
+  color: #000;
+  font-weight: bold;
+}
+
+footer span:hover {
+  text-shadow: 0.15px 0.15px 0.8px #fff;
+}
+
+.fa {
+  color: #000;
+  margin-left: 0.55rem;
+}
+
+.fa:hover {
+  margin-top: -10px;
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+  transition: all ease-in-out 150ms;
+}
