@@ -1,0 +1,156 @@
+body {
+  background: linear-gradient(to bottom, #29323c, #485563) no-repeat;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: -1rem;
+  letter-spacing: 0.15rem;
+  word-spacing: 0.3rem;
+  text-shadow: 0.6px 0.6px 1px #000;
+}
+
+span img {
+  position: relative;
+  top: 1rem;
+}
+
+#pomodoro {
+  max-width: 560px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  outline: none;
+}
+
+main span {
+  text-transform: uppercase;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.05rem;
+}
+
+#minBreakBtn, #minSessionBtn, #plusBreakBtn, #plusSessionBtn {
+  border: 0;
+  color: #fff;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  width: 1.5rem;
+}
+
+#minBreakBtn, #minSessionBtn {
+  background: #4CAF50;
+}
+
+#plusBreakBtn, #plusSessionBtn {
+  background: #F44336;
+}
+
+div#clock {
+  font-family: 'Iceberg', cursive;
+}
+
+#start, #reset {
+  border: 0; 
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+#start {
+  background: #fff;
+  color: #000;
+}
+
+#start:hover {
+  opacity: 0.8;
+}
+
+#reset {
+  background: #000;
+  color: #fff;
+}
+
+#reset:hover {
+  opacity: 0.85;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#breakNum {
+  margin: 1rem;
+}
+
+#sessionNum {
+  margin: 1rem;
+}
+
+#clock, #start, #reset, #progress {
+  position: absolute;
+}
+
+p#quote {
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+#clock {
+  font-size: 8rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.2rem;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.58), inset -1px -3px 25px 0.1px #000;
+}
+
+#start {
+  left: 35%;
+  top: 73%;
+  transform: translate(-35%, -73%);
+}
+
+#reset {
+  left: 64%;
+  top: 73%;
+  transform: translate(-60%, -73%);
+}
+
+div#progress {
+  left: 50%;
+  top: 80%;
+  height: 1.5rem;
+  transform: translate(-50%, -80%);
+  background: #010;
+  text-align: center;
+}
+
+footer {
+  word-spacing: 0.2rem; 
+  letter-spacing: 0.03rem;
+  position: fixed;
+  left: 0;
+  text-align: center;
+  bottom: 0rem;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer span:hover {
+  font-family: 'Iceberg', cursive;
+  text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Iceberg" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Pomodoro <span><img width="50" height="50" src="https://s20.postimg.org/z1awkyrf1/pomodoro.png" alt="Pomodoro"></span> Clock</h1>
+
+	<main id="pomodoro">
+	  <div class="left">
+		<span>Break Length</span><br>
+		<input type="button" value="-" id="minBreakBtn">
+		<span id="breakNum">5</span>
+		<input type="button" value="+" id="plusBreakBtn">
+	  </div>
+	  <div class="right">
+		<span>Session Length</span><br>
+		<input type="button" value="-" id="minSessionBtn">
+		<span id="sessionNum">25</span>
+		<input type="button" value="+" id="plusSessionBtn">
+	  </div>
+	  
+	  <p id="quote"></p>
+	  <div id="clock">25:00</div>
+	  <input type="button" value="Start" id="start">
+	  <input type="button" value="Reset" id="reset">
+	  
+	  <div id="progress"></div>
+	</main>
+
+	<footer>
+	  <p>Designed &amp; Coded by <span><a href="https://codepen.io/simongjetaj/" target="_blank">Simon</a></span></p>
+	</footer>
+  
+    <script  src="js/index.js"></script>
+	
+</body>
+</html>
