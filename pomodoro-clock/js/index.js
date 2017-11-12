@@ -49,10 +49,14 @@ startBtn.addEventListener("click", () => {
   sessionNum *= 60;
   breakNum   *= 60;
   
-  minBreakBtn.disabled    = true;
-  plusBreakBtn.disabled   = true;
-  minSessionBtn.disabled  = true;
-  plusSessionBtn.disabled = true;
+  minBreakBtn.disabled         = true;
+  plusBreakBtn.disabled        = true;
+  minSessionBtn.disabled       = true;
+  plusSessionBtn.disabled      = true;
+  minBreakBtn.style.opacity    = 0.6;
+  plusBreakBtn.style.opacity   = 0.6;
+  minSessionBtn.style.opacity  = 0.6;
+  plusSessionBtn.style.opacity = 0.6;
   
   quote.textContent = '"If you want it, work for it."';
   
@@ -84,6 +88,7 @@ startBtn.addEventListener("click", () => {
     }
   }
   startBtn.disabled = true;
+  startBtn.style.opacity = 0.6;
 });
 
 resetBtn.addEventListener("click", () => {
