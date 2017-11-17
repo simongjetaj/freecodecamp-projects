@@ -1,15 +1,15 @@
-const minBreakBtn = getById("minBreakBtn");
-const plusBreakBtn = getById("plusBreakBtn");
-const minSessionBtn = getById("minSessionBtn");
+const minBreakBtn    = getById("minBreakBtn");
+const plusBreakBtn   = getById("plusBreakBtn");
+const minSessionBtn  = getById("minSessionBtn");
 const plusSessionBtn = getById("plusSessionBtn");
-const quote    = getById("quote");
-const startBtn = getById("start");
-const clock    = getById("clock");
-const resetBtn = getById("reset");
-const progress = getById("progress");
+const quote          = getById("quote");
+const startBtn       = getById("start");
+const clock          = getById("clock");
+const resetBtn       = getById("reset");
+const progress       = getById("progress");
 
-let breakNum   = parseInt(getById("breakNum").textContent);
-let sessionNum = parseInt(getById("sessionNum").textContent);
+let breakNum         = parseInt(getById("breakNum").textContent);
+let sessionNum       = parseInt(getById("sessionNum").textContent);
 
 minBreakBtn.addEventListener("click", () => {
   if (breakNum > 1) {
