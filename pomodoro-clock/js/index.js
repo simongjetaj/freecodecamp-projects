@@ -64,10 +64,11 @@ startBtn.addEventListener("click", () => {
 
   const sessionLength = sessionNum;
   function startSession() {
-    const sessionPercent = (sessionNum / sessionLength) * 100;
+    const sessionPercent = (2.25 * (sessionNum / sessionLength) * 100); // I multiply by 2.25 to increase the width of the progress bar :)
     progress.style.width = `${sessionPercent}px`;
     progress.style.backgroundColor = "#4CAF50";
-
+    progress.style.borderRadius = "0.2rem";
+    
     if (sessionNum === 0) {
       clearInterval(sessInterval);
       let breakInterval = setInterval(startBreak, 1000);
@@ -78,7 +79,7 @@ startBtn.addEventListener("click", () => {
   
     const breakLength = breakNum;
     function startBreak() {
-      const breakPercent = (breakNum / breakLength) * 100;
+      const breakPercent = (2.25 * (breakNum / breakLength) * 100); 
       progress.style.width = `${breakPercent}px`;
       progress.style.backgroundColor = "#F44336";
 
